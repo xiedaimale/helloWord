@@ -11,9 +11,11 @@ const String& opretaor +=(const String$str)
 {
 char*p = rep ;
 int lenth  = len+str.len;
-delete p;
+
 p=new char[lenth+1]
-strcpy(p.rep,rep);
-strcat(p.rep,str.rep);
+strcpy(rep,p);
+strcat(rep,str.rep);
+    len = lenth
+    delete p
 return *this;
 }
